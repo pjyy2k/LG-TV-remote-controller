@@ -5,7 +5,12 @@ struct TouchpadView: View {
     @State private var lastLocation: CGPoint?
     @State private var residual = CGSize.zero
     @State private var lastScrollY: CGFloat?
+    @State private var scrollTravel: CGFloat = 0
+    @State private var scrollSteps = 0
+    @State private var clicks = 0
     private let sensitivity: CGFloat = 1.6
+    // Finger travel per scroll notch, like one detent of the Magic Remote wheel.
+    private let scrollStepDistance: CGFloat = 18
 
     var body: some View {
         VStack(spacing: 16) {
@@ -14,11 +19,13 @@ struct TouchpadView: View {
                     .fill(.white.opacity(0.08))
                     .overlay(Text("드래그: 포인터 이동 · 탭: 클릭").font(.footnote).foregroundStyle(.secondary))
                     .gesture(pointerGesture)
+                    .sensoryFeedback(.impact(weight: .light), trigger: clicks)
                 RoundedRectangle(cornerRadius: 16)
                     .fill(.white.opacity(0.05))
                     .frame(width: 48)
                     .overlay(Image(systemName: "arrow.up.and.down").foregroundStyle(.secondary))
                     .gesture(scrollGesture)
+                    .sensoryFeedback(.selection, trigger: scrollSteps)
             }
             HStack {
                 KeyButton(systemImage: "arrow.uturn.backward", label: "뒤로") { model.button("BACK") }
@@ -45,7 +52,10 @@ struct TouchpadView: View {
             .onEnded { value in
                 lastLocation = nil
                 residual = .zero
-                if abs(value.translation.width) < 4 && abs(value.translation.height) < 4 { model.click() }
+                if abs(value.translation.width) < 4 && abs(value.translation.height) < 4 {
+                    clicks += 1
+                    model.click()
+                }
             }
     }
 
@@ -54,9 +64,16 @@ struct TouchpadView: View {
             .onChanged { value in
                 defer { lastScrollY = value.location.y }
                 guard let lastScrollY else { return }
-                let delta = Int(value.location.y - lastScrollY)
-                if delta != 0 { model.scroll(dy: -delta) }
+                scrollTravel += value.location.y - lastScrollY
+                let notches = Int(scrollTravel / scrollStepDistance)
+                guard notches != 0 else { return }
+                scrollTravel -= CGFloat(notches) * scrollStepDistance
+                scrollSteps += abs(notches)
+                model.scroll(dy: -notches)
             }
-            .onEnded { _ in lastScrollY = nil }
+            .onEnded { _ in
+                lastScrollY = nil
+                scrollTravel = 0
+            }
     }
 }
