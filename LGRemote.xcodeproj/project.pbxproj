@@ -20,7 +20,6 @@
 		31F5AE008731B3449C8B4766 /* RegistrationPayload.json in Resources */ = {isa = PBXBuildFile; fileRef = 438E636BA04497DEC5F926CB /* RegistrationPayload.json */; };
 		3EE252C3DF9E3C76A2F7B879 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D422BB3E02F9C461758CC052 /* SettingsView.swift */; };
 		47468623DD7A4060DC14E34E /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E00CAD9CD58AF0B9C6F02 /* TVCommand.swift */; };
-		48B7F7430101B0F7D603601C /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = BF294AA67B0DBD2C0222BDA4 /* PrivacyPolicy.md */; };
 		5594CA99A29611531FE94E43 /* LGRemoteWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D2A2F83BB76EC13A9F216D56 /* LGRemoteWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5E25B8DC1D991524F715D07A /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A382D12B8DFE74C3B59D8C4B /* LocalNetwork.swift */; };
 		601ED9E2EEEFAC90A8021E82 /* TVCommandIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */; };
@@ -36,6 +35,7 @@
 		ABA6EB14B2E4EB6864691541 /* WakeOnLAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA366C48585BEDC8557C713 /* WakeOnLAN.swift */; };
 		AFA15D35B7DB5FEFA87862E5 /* WatchRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51E2A26038FE46B9AA8D58 /* WatchRemote.swift */; };
 		B1166256951B307B7F97216B /* TVCommandIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */; };
+		B6968DB5B79C75F7619432AB /* privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = 85A02F8677A5B4DD8DE27DE7 /* privacy.md */; };
 		BE86F1ADAFD90CB16095078D /* RemoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363DA739050168E8668B344 /* RemoteViewModel.swift */; };
 		CCAED1D6F4891A7F0838AA51 /* TVPowerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD120403FD136C7FCF028205 /* TVPowerState.swift */; };
 		CFAB8D24D37B4B2BCB89AA90 /* WakeOnLAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA366C48585BEDC8557C713 /* WakeOnLAN.swift */; };
@@ -106,6 +106,7 @@
 		7276A1366EC0F1E416F74D8D /* WatchRelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRelay.swift; sourceTree = "<group>"; };
 		7A4698A4BEEADF3883351B85 /* TVStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVStore.swift; sourceTree = "<group>"; };
 		8363DA739050168E8668B344 /* RemoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewModel.swift; sourceTree = "<group>"; };
+		85A02F8677A5B4DD8DE27DE7 /* privacy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = privacy.md; sourceTree = "<group>"; };
 		8E357EA4573418A7D5F45552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96BEDC8F29032BDDA487BF4D /* RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteView.swift; sourceTree = "<group>"; };
 		99D5BE744A35AFF18D2D32B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,7 +114,6 @@
 		A382D12B8DFE74C3B59D8C4B /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
 		AD120403FD136C7FCF028205 /* TVPowerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVPowerState.swift; sourceTree = "<group>"; };
 		AD3197EC970766903D8B7D41 /* LGRemoteWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGRemoteWatchApp.swift; sourceTree = "<group>"; };
-		BF294AA67B0DBD2C0222BDA4 /* PrivacyPolicy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PrivacyPolicy.md; sourceTree = "<group>"; };
 		C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommandIntent.swift; sourceTree = "<group>"; };
 		D2A2F83BB76EC13A9F216D56 /* LGRemoteWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGRemoteWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D422BB3E02F9C461758CC052 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -131,6 +131,7 @@
 		1ECF8E90A0986C8E4ED60901 = {
 			isa = PBXGroup;
 			children = (
+				87E178D29D030E2B1D4AEA01 /* docs */,
 				5C241F4ED6DF60EE4F4F49C3 /* LGRemote */,
 				A23405A44929B67D766EE904 /* LGRemoteWatch */,
 				CD965C8F4F3B635410ACA277 /* LGRemoteWidget */,
@@ -182,6 +183,14 @@
 				7276A1366EC0F1E416F74D8D /* WatchRelay.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		87E178D29D030E2B1D4AEA01 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				85A02F8677A5B4DD8DE27DE7 /* privacy.md */,
+			);
+			path = docs;
 			sourceTree = "<group>";
 		};
 		A23405A44929B67D766EE904 /* LGRemoteWatch */ = {
@@ -242,7 +251,6 @@
 			children = (
 				8E357EA4573418A7D5F45552 /* Assets.xcassets */,
 				DD005050FE2C4B9BE7879F4D /* PrivacyInfo.xcprivacy */,
-				BF294AA67B0DBD2C0222BDA4 /* PrivacyPolicy.md */,
 				438E636BA04497DEC5F926CB /* RegistrationPayload.json */,
 			);
 			path = Resources;
@@ -357,8 +365,8 @@
 			files = (
 				EE2A09ED6C65428A819C448D /* Assets.xcassets in Resources */,
 				7F8F24286477D64869670C50 /* PrivacyInfo.xcprivacy in Resources */,
-				48B7F7430101B0F7D603601C /* PrivacyPolicy.md in Resources */,
 				31F5AE008731B3449C8B4766 /* RegistrationPayload.json in Resources */,
+				B6968DB5B79C75F7619432AB /* privacy.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

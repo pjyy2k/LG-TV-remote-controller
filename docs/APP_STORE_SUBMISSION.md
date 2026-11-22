@@ -12,9 +12,9 @@
 
 ## 개인정보 처리방침
 
-- 원문: `LGRemote/Resources/PrivacyPolicy.md` (앱 설정 > 개인정보 처리방침에서 같은 내용을 보여 줍니다)
-- App Store Connect에는 공개 URL이 필요합니다. 위 파일 내용을 GitHub Pages, Notion 공개 페이지, Gist 등에 올리고 그 주소를 **앱 정보 > 개인정보 처리방침 URL**에 넣으세요.
-- 내용을 바꾸면 파일과 공개 페이지를 함께 고칩니다.
+- URL: https://pjyy2k.github.io/LG-TV-remote-controller/privacy.html — **앱 정보 > 개인정보 처리방침 URL**에 넣으세요.
+- 지원 URL: https://pjyy2k.github.io/LG-TV-remote-controller/
+- 원문은 `docs/privacy.md` 하나입니다. GitHub Pages가 이 파일을 페이지로 만들고, 앱 설정 > 개인정보 처리방침도 빌드에 포함된 같은 파일을 보여 줍니다. 내용을 바꾸고 푸시하면 웹 페이지가 갱신되고, 앱은 다음 빌드부터 반영됩니다.
 
 ## 앱 개인정보 보호(개인정보 라벨)
 

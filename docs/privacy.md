@@ -14,7 +14,7 @@
 워치에서 누른 버튼은 짝지은 아이폰으로 전달되고, 아이폰이 TV로 보냅니다. 워치에는 아무 정보도 저장하지 않습니다.
 
 **문의**
-App Store의 개발자 연락처로 문의해 주세요.
+https://github.com/pjyy2k/LG-TV-remote-controller/issues 에 남겨 주세요.
 
 ---
 
@@ -28,4 +28,4 @@ The TV's name, IP address, MAC address, and the pairing key issued by the TV are
 
 The app uses your local network only to find and control the TV on the same Wi-Fi. Commands go directly from your iPhone (or Apple Watch via your iPhone) to the TV and never leave your network.
 
-Contact: use the developer contact on the App Store page.
+Contact: https://github.com/pjyy2k/LG-TV-remote-controller/issues

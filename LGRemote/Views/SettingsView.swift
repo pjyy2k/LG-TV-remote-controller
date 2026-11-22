@@ -51,7 +51,7 @@ struct SettingsView: View {
 
 private struct PrivacyPolicyView: View {
     private let policy: AttributedString = {
-        guard let url = Bundle.main.url(forResource: "PrivacyPolicy", withExtension: "md"),
+        guard let url = Bundle.main.url(forResource: "privacy", withExtension: "md"),
               let text = try? String(contentsOf: url, encoding: .utf8),
               let parsed = try? AttributedString(
                   markdown: text,

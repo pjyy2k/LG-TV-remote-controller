@@ -1,0 +1,7 @@
+title: TV 리모컨
+description: LG webOS TV용 아이폰·Apple Watch 리모컨
+theme: jekyll-theme-primer
+lang: ko
+exclude:
+  - APP_STORE_SUBMISSION.md
+  - screenshots
