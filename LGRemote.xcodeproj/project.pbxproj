@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C6BE4A47E308CA4CABD71D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DD005050FE2C4B9BE7879F4D /* PrivacyInfo.xcprivacy */; };
+		03CF410FB56843DD985EF57E /* TVPowerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD120403FD136C7FCF028205 /* TVPowerState.swift */; };
+		07863189441DF1BE70010EC5 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E80960EC24C46738D6E0729 /* ConnectView.swift */; };
+		0C186D346EFBCF16F5D98CD3 /* LGRemoteWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3197EC970766903D8B7D41 /* LGRemoteWatchApp.swift */; };
+		15677114980992EE9DE81BF9 /* KeyboardPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C26C33E569CD9D86BA15E4 /* KeyboardPopup.swift */; };
+		16732CBF980254907A7AA56A /* RegistrationPayload.json in Resources */ = {isa = PBXBuildFile; fileRef = 438E636BA04497DEC5F926CB /* RegistrationPayload.json */; };
+		247D63952F9272E7D87AA991 /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E00CAD9CD58AF0B9C6F02 /* TVCommand.swift */; };
+		29D301DD17E5800F5A595763 /* TVScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97F8647CF6810EC01F1FA35 /* TVScanner.swift */; };
+		2D495DE0C1D972F66616FE6B /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A382D12B8DFE74C3B59D8C4B /* LocalNetwork.swift */; };
+		2F8951AEADC796C31F1F2C61 /* WatchRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7276A1366EC0F1E416F74D8D /* WatchRelay.swift */; };
+		31F5AE008731B3449C8B4766 /* RegistrationPayload.json in Resources */ = {isa = PBXBuildFile; fileRef = 438E636BA04497DEC5F926CB /* RegistrationPayload.json */; };
+		3EE252C3DF9E3C76A2F7B879 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D422BB3E02F9C461758CC052 /* SettingsView.swift */; };
+		47468623DD7A4060DC14E34E /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E00CAD9CD58AF0B9C6F02 /* TVCommand.swift */; };
+		48B7F7430101B0F7D603601C /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = BF294AA67B0DBD2C0222BDA4 /* PrivacyPolicy.md */; };
+		5594CA99A29611531FE94E43 /* LGRemoteWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D2A2F83BB76EC13A9F216D56 /* LGRemoteWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5E25B8DC1D991524F715D07A /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A382D12B8DFE74C3B59D8C4B /* LocalNetwork.swift */; };
+		601ED9E2EEEFAC90A8021E82 /* TVCommandIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */; };
+		748EB4D92D221525806BA866 /* TVScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97F8647CF6810EC01F1FA35 /* TVScanner.swift */; };
+		75D124FDE3B7F8F2A0FBB918 /* TVStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4698A4BEEADF3883351B85 /* TVStore.swift */; };
+		7F45475AA616979928934AAF /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEC39B977048458E8991E8 /* AppsView.swift */; };
+		7F8F24286477D64869670C50 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DD005050FE2C4B9BE7879F4D /* PrivacyInfo.xcprivacy */; };
+		8ACF23B0A47B4F5E1E1D0C14 /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BEDC8F29032BDDA487BF4D /* RemoteView.swift */; };
+		8E8E60370BEB43369EA9A003 /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E00CAD9CD58AF0B9C6F02 /* TVCommand.swift */; };
+		925DE37664B9AB3E23EB139C /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C0A4E78DD1B20FC5ECCBC /* Components.swift */; };
+		954E8FC5B02818258F23F7F8 /* RemoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5B8A300A475048A704F97 /* RemoteWidget.swift */; };
+		AA93428A6D6E38532BE9578D /* LGRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC3B0324EF9153C3B2A61CB /* LGRemoteApp.swift */; };
+		ABA6EB14B2E4EB6864691541 /* WakeOnLAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA366C48585BEDC8557C713 /* WakeOnLAN.swift */; };
+		AFA15D35B7DB5FEFA87862E5 /* WatchRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51E2A26038FE46B9AA8D58 /* WatchRemote.swift */; };
+		B1166256951B307B7F97216B /* TVCommandIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */; };
+		BE86F1ADAFD90CB16095078D /* RemoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363DA739050168E8668B344 /* RemoteViewModel.swift */; };
+		CCAED1D6F4891A7F0838AA51 /* TVPowerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD120403FD136C7FCF028205 /* TVPowerState.swift */; };
+		CFAB8D24D37B4B2BCB89AA90 /* WakeOnLAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA366C48585BEDC8557C713 /* WakeOnLAN.swift */; };
+		D84C564B3879E0F5EACE8ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D5BE744A35AFF18D2D32B1 /* Assets.xcassets */; };
+		E1A399545A6EAC4E7A26C9D8 /* TouchpadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BE9D61329CE193577BB8F /* TouchpadView.swift */; };
+		E487E56B4E6ADAC019A09AE7 /* TVStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4698A4BEEADF3883351B85 /* TVStore.swift */; };
+		EE2A09ED6C65428A819C448D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E357EA4573418A7D5F45552 /* Assets.xcassets */; };
+		F0313156C82E76A86D4A8188 /* WebOSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8AFB4549B8E3CC4B39844 /* WebOSClient.swift */; };
+		FE3F76461A5524C3A7DCC298 /* LGRemoteWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F36F26E573614CDEE0E34F60 /* LGRemoteWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FFD5578D2CDC5AFC4A3F75F2 /* WebOSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8AFB4549B8E3CC4B39844 /* WebOSClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7999EB45DF515A1ED8FECF3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16067D05AAFC5CFA4F0601B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F08B75F6EE27BAF40FDC532;
+			remoteInfo = LGRemoteWidget;
+		};
+		9CF067403A8FCEE16B77D2D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16067D05AAFC5CFA4F0601B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17261295FBD3A38F3AB68676;
+			remoteInfo = LGRemoteWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		205ED86931FAE23314ECBEEA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FE3F76461A5524C3A7DCC298 /* LGRemoteWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A7AB26A979DD1073DB5BC6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5594CA99A29611531FE94E43 /* LGRemoteWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		23D729FBA5D1E1D76E1BC997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2F7BE9D61329CE193577BB8F /* TouchpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchpadView.swift; sourceTree = "<group>"; };
+		3CA366C48585BEDC8557C713 /* WakeOnLAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeOnLAN.swift; sourceTree = "<group>"; };
+		3E80960EC24C46738D6E0729 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		420E00CAD9CD58AF0B9C6F02 /* TVCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommand.swift; sourceTree = "<group>"; };
+		438E636BA04497DEC5F926CB /* RegistrationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RegistrationPayload.json; sourceTree = "<group>"; };
+		46C26C33E569CD9D86BA15E4 /* KeyboardPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPopup.swift; sourceTree = "<group>"; };
+		5A0E5593B5937B9F49C36CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5CE8AFB4549B8E3CC4B39844 /* WebOSClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebOSClient.swift; sourceTree = "<group>"; };
+		65939EFEF5699F357CC2F50E /* LGRemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LGRemote.entitlements; sourceTree = "<group>"; };
+		69D5B8A300A475048A704F97 /* RemoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWidget.swift; sourceTree = "<group>"; };
+		6EB1857BA437F45E65D4A2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7276A1366EC0F1E416F74D8D /* WatchRelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRelay.swift; sourceTree = "<group>"; };
+		7A4698A4BEEADF3883351B85 /* TVStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVStore.swift; sourceTree = "<group>"; };
+		8363DA739050168E8668B344 /* RemoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewModel.swift; sourceTree = "<group>"; };
+		8E357EA4573418A7D5F45552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96BEDC8F29032BDDA487BF4D /* RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteView.swift; sourceTree = "<group>"; };
+		99D5BE744A35AFF18D2D32B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20C0A4E78DD1B20FC5ECCBC /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		A382D12B8DFE74C3B59D8C4B /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
+		AD120403FD136C7FCF028205 /* TVPowerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVPowerState.swift; sourceTree = "<group>"; };
+		AD3197EC970766903D8B7D41 /* LGRemoteWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGRemoteWatchApp.swift; sourceTree = "<group>"; };
+		BF294AA67B0DBD2C0222BDA4 /* PrivacyPolicy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PrivacyPolicy.md; sourceTree = "<group>"; };
+		C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommandIntent.swift; sourceTree = "<group>"; };
+		D2A2F83BB76EC13A9F216D56 /* LGRemoteWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGRemoteWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D422BB3E02F9C461758CC052 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D97F8647CF6810EC01F1FA35 /* TVScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVScanner.swift; sourceTree = "<group>"; };
+		DB82B456F351AF7CB0C582F0 /* LGRemote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LGRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC05C787ACD1833078936ACF /* LGRemoteWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LGRemoteWidget.entitlements; sourceTree = "<group>"; };
+		DCCEC39B977048458E8991E8 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
+		DD005050FE2C4B9BE7879F4D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DDC3B0324EF9153C3B2A61CB /* LGRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGRemoteApp.swift; sourceTree = "<group>"; };
+		F36F26E573614CDEE0E34F60 /* LGRemoteWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LGRemoteWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD51E2A26038FE46B9AA8D58 /* WatchRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRemote.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1ECF8E90A0986C8E4ED60901 = {
+			isa = PBXGroup;
+			children = (
+				5C241F4ED6DF60EE4F4F49C3 /* LGRemote */,
+				A23405A44929B67D766EE904 /* LGRemoteWatch */,
+				CD965C8F4F3B635410ACA277 /* LGRemoteWidget */,
+				39E9F2675EC2598844AF3DE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2091FDD885E2CA8D813A544F /* WebOS */ = {
+			isa = PBXGroup;
+			children = (
+				A382D12B8DFE74C3B59D8C4B /* LocalNetwork.swift */,
+				AD120403FD136C7FCF028205 /* TVPowerState.swift */,
+				D97F8647CF6810EC01F1FA35 /* TVScanner.swift */,
+				3CA366C48585BEDC8557C713 /* WakeOnLAN.swift */,
+				5CE8AFB4549B8E3CC4B39844 /* WebOSClient.swift */,
+			);
+			path = WebOS;
+			sourceTree = "<group>";
+		};
+		39E9F2675EC2598844AF3DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB82B456F351AF7CB0C582F0 /* LGRemote.app */,
+				D2A2F83BB76EC13A9F216D56 /* LGRemoteWatch.app */,
+				F36F26E573614CDEE0E34F60 /* LGRemoteWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C241F4ED6DF60EE4F4F49C3 /* LGRemote */ = {
+			isa = PBXGroup;
+			children = (
+				23D729FBA5D1E1D76E1BC997 /* Info.plist */,
+				65939EFEF5699F357CC2F50E /* LGRemote.entitlements */,
+				71CC08CA1AC01AD7FE7D9122 /* App */,
+				ABDD8DB3DD46B5FF869CFC62 /* Model */,
+				DE7D1F879A8E42BE8BC0FE83 /* Resources */,
+				D6361EB037D9E4C63FAB6D88 /* Shared */,
+				A519E5878229E9DC07B01277 /* Views */,
+				2091FDD885E2CA8D813A544F /* WebOS */,
+			);
+			path = LGRemote;
+			sourceTree = "<group>";
+		};
+		71CC08CA1AC01AD7FE7D9122 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3B0324EF9153C3B2A61CB /* LGRemoteApp.swift */,
+				7276A1366EC0F1E416F74D8D /* WatchRelay.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A23405A44929B67D766EE904 /* LGRemoteWatch */ = {
+			isa = PBXGroup;
+			children = (
+				99D5BE744A35AFF18D2D32B1 /* Assets.xcassets */,
+				6EB1857BA437F45E65D4A2A1 /* Info.plist */,
+				AD3197EC970766903D8B7D41 /* LGRemoteWatchApp.swift */,
+				FD51E2A26038FE46B9AA8D58 /* WatchRemote.swift */,
+			);
+			path = LGRemoteWatch;
+			sourceTree = "<group>";
+		};
+		A519E5878229E9DC07B01277 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCCEC39B977048458E8991E8 /* AppsView.swift */,
+				A20C0A4E78DD1B20FC5ECCBC /* Components.swift */,
+				3E80960EC24C46738D6E0729 /* ConnectView.swift */,
+				46C26C33E569CD9D86BA15E4 /* KeyboardPopup.swift */,
+				96BEDC8F29032BDDA487BF4D /* RemoteView.swift */,
+				D422BB3E02F9C461758CC052 /* SettingsView.swift */,
+				2F7BE9D61329CE193577BB8F /* TouchpadView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ABDD8DB3DD46B5FF869CFC62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8363DA739050168E8668B344 /* RemoteViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD965C8F4F3B635410ACA277 /* LGRemoteWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5A0E5593B5937B9F49C36CB6 /* Info.plist */,
+				DC05C787ACD1833078936ACF /* LGRemoteWidget.entitlements */,
+				69D5B8A300A475048A704F97 /* RemoteWidget.swift */,
+			);
+			path = LGRemoteWidget;
+			sourceTree = "<group>";
+		};
+		D6361EB037D9E4C63FAB6D88 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				420E00CAD9CD58AF0B9C6F02 /* TVCommand.swift */,
+				C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */,
+				7A4698A4BEEADF3883351B85 /* TVStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DE7D1F879A8E42BE8BC0FE83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E357EA4573418A7D5F45552 /* Assets.xcassets */,
+				DD005050FE2C4B9BE7879F4D /* PrivacyInfo.xcprivacy */,
+				BF294AA67B0DBD2C0222BDA4 /* PrivacyPolicy.md */,
+				438E636BA04497DEC5F926CB /* RegistrationPayload.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17261295FBD3A38F3AB68676 /* LGRemoteWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C552776E675757DCC48D5317 /* Build configuration list for PBXNativeTarget "LGRemoteWatch" */;
+			buildPhases = (
+				08F3ABE19E7084005B290A5B /* Sources */,
+				73554387986D34EC084A8C95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGRemoteWatch;
+			packageProductDependencies = (
+			);
+			productName = LGRemoteWatch;
+			productReference = D2A2F83BB76EC13A9F216D56 /* LGRemoteWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3ECEB29546A2FB47982F701A /* LGRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B2C1282A7F8599BB4752C7 /* Build configuration list for PBXNativeTarget "LGRemote" */;
+			buildPhases = (
+				E25611CA281A193B59A4FE69 /* Sources */,
+				0A5BF52DDABC7F2E21B0CA48 /* Resources */,
+				205ED86931FAE23314ECBEEA /* Embed Foundation Extensions */,
+				50A7AB26A979DD1073DB5BC6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7551B242A749352E08C51BEE /* PBXTargetDependency */,
+				ED531358159E28460CACA590 /* PBXTargetDependency */,
+			);
+			name = LGRemote;
+			packageProductDependencies = (
+			);
+			productName = LGRemote;
+			productReference = DB82B456F351AF7CB0C582F0 /* LGRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F08B75F6EE27BAF40FDC532 /* LGRemoteWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2E9DCBF354BD7231F044D5 /* Build configuration list for PBXNativeTarget "LGRemoteWidget" */;
+			buildPhases = (
+				962F7CC5816652D7F31AE31D /* Sources */,
+				DC7B544BE33B205EDEB9FCCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGRemoteWidget;
+			packageProductDependencies = (
+			);
+			productName = LGRemoteWidget;
+			productReference = F36F26E573614CDEE0E34F60 /* LGRemoteWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16067D05AAFC5CFA4F0601B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					17261295FBD3A38F3AB68676 = {
+						ProvisioningStyle = Automatic;
+					};
+					3ECEB29546A2FB47982F701A = {
+						ProvisioningStyle = Automatic;
+					};
+					5F08B75F6EE27BAF40FDC532 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 16525020E0984C01E24EF898 /* Build configuration list for PBXProject "LGRemote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1ECF8E90A0986C8E4ED60901;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 39E9F2675EC2598844AF3DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ECEB29546A2FB47982F701A /* LGRemote */,
+				17261295FBD3A38F3AB68676 /* LGRemoteWatch */,
+				5F08B75F6EE27BAF40FDC532 /* LGRemoteWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A5BF52DDABC7F2E21B0CA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2A09ED6C65428A819C448D /* Assets.xcassets in Resources */,
+				7F8F24286477D64869670C50 /* PrivacyInfo.xcprivacy in Resources */,
+				48B7F7430101B0F7D603601C /* PrivacyPolicy.md in Resources */,
+				31F5AE008731B3449C8B4766 /* RegistrationPayload.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73554387986D34EC084A8C95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84C564B3879E0F5EACE8ACE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7B544BE33B205EDEB9FCCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C6BE4A47E308CA4CABD71D /* PrivacyInfo.xcprivacy in Resources */,
+				16732CBF980254907A7AA56A /* RegistrationPayload.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08F3ABE19E7084005B290A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C186D346EFBCF16F5D98CD3 /* LGRemoteWatchApp.swift in Sources */,
+				8E8E60370BEB43369EA9A003 /* TVCommand.swift in Sources */,
+				AFA15D35B7DB5FEFA87862E5 /* WatchRemote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962F7CC5816652D7F31AE31D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E25B8DC1D991524F715D07A /* LocalNetwork.swift in Sources */,
+				954E8FC5B02818258F23F7F8 /* RemoteWidget.swift in Sources */,
+				247D63952F9272E7D87AA991 /* TVCommand.swift in Sources */,
+				B1166256951B307B7F97216B /* TVCommandIntent.swift in Sources */,
+				CCAED1D6F4891A7F0838AA51 /* TVPowerState.swift in Sources */,
+				29D301DD17E5800F5A595763 /* TVScanner.swift in Sources */,
+				75D124FDE3B7F8F2A0FBB918 /* TVStore.swift in Sources */,
+				CFAB8D24D37B4B2BCB89AA90 /* WakeOnLAN.swift in Sources */,
+				FFD5578D2CDC5AFC4A3F75F2 /* WebOSClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25611CA281A193B59A4FE69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F45475AA616979928934AAF /* AppsView.swift in Sources */,
+				925DE37664B9AB3E23EB139C /* Components.swift in Sources */,
+				07863189441DF1BE70010EC5 /* ConnectView.swift in Sources */,
+				15677114980992EE9DE81BF9 /* KeyboardPopup.swift in Sources */,
+				AA93428A6D6E38532BE9578D /* LGRemoteApp.swift in Sources */,
+				2D495DE0C1D972F66616FE6B /* LocalNetwork.swift in Sources */,
+				8ACF23B0A47B4F5E1E1D0C14 /* RemoteView.swift in Sources */,
+				BE86F1ADAFD90CB16095078D /* RemoteViewModel.swift in Sources */,
+				3EE252C3DF9E3C76A2F7B879 /* SettingsView.swift in Sources */,
+				47468623DD7A4060DC14E34E /* TVCommand.swift in Sources */,
+				601ED9E2EEEFAC90A8021E82 /* TVCommandIntent.swift in Sources */,
+				03CF410FB56843DD985EF57E /* TVPowerState.swift in Sources */,
+				748EB4D92D221525806BA866 /* TVScanner.swift in Sources */,
+				E487E56B4E6ADAC019A09AE7 /* TVStore.swift in Sources */,
+				E1A399545A6EAC4E7A26C9D8 /* TouchpadView.swift in Sources */,
+				ABA6EB14B2E4EB6864691541 /* WakeOnLAN.swift in Sources */,
+				2F8951AEADC796C31F1F2C61 /* WatchRelay.swift in Sources */,
+				F0313156C82E76A86D4A8188 /* WebOSClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7551B242A749352E08C51BEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F08B75F6EE27BAF40FDC532 /* LGRemoteWidget */;
+			targetProxy = 7999EB45DF515A1ED8FECF3E /* PBXContainerItemProxy */;
+		};
+		ED531358159E28460CACA590 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17261295FBD3A38F3AB68676 /* LGRemoteWatch */;
+			targetProxy = 9CF067403A8FCEE16B77D2D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		285ACDF240FC4E66787584B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LGRemote/LGRemote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LGRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinyoung.lgremote;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9083071E960B938292EBD8BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		9B1DB43BE199BE869141B597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LGRemoteWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinyoung.lgremote.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		C264EB40D4A498BACAD02317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LGRemote/LGRemote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LGRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinyoung.lgremote;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C37387B6B61ED62F5751A873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LGRemoteWidget/LGRemoteWidget.entitlements;
+				INFOPLIST_FILE = LGRemoteWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinyoung.lgremote.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CABC9474C61551598587E908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LGRemoteWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinyoung.lgremote.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		E4414067232AE08618F9F7D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		FD8604C19D1A5773A757BA8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LGRemoteWidget/LGRemoteWidget.entitlements;
+				INFOPLIST_FILE = LGRemoteWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jinyoung.lgremote.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16525020E0984C01E24EF898 /* Build configuration list for PBXProject "LGRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9083071E960B938292EBD8BF /* Debug */,
+				E4414067232AE08618F9F7D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C552776E675757DCC48D5317 /* Build configuration list for PBXNativeTarget "LGRemoteWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CABC9474C61551598587E908 /* Debug */,
+				9B1DB43BE199BE869141B597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB2E9DCBF354BD7231F044D5 /* Build configuration list for PBXNativeTarget "LGRemoteWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37387B6B61ED62F5751A873 /* Debug */,
+				FD8604C19D1A5773A757BA8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1B2C1282A7F8599BB4752C7 /* Build configuration list for PBXNativeTarget "LGRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285ACDF240FC4E66787584B7 /* Debug */,
+				C264EB40D4A498BACAD02317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16067D05AAFC5CFA4F0601B7 /* Project object */;
+}
