@@ -29,3 +29,17 @@ The TV's name, IP address, MAC address, and the pairing key issued by the TV are
 The app uses your local network only to find and control the TV on the same Wi-Fi. Commands go directly from your iPhone (or Apple Watch via your iPhone) to the TV and never leave your network.
 
 Contact: https://github.com/pjyy2k/LG-TV-remote-controller/issues
+
+---
+
+**プライバシーポリシー（TVリモコン）**
+
+施行日: 2026年11月22日
+
+このアプリは個人情報を収集しません。開発者や第三者のサーバーにデータを送信することはなく、分析・広告・トラッキングのツールも使用していません。
+
+接続したTVの名前、IPアドレス、MACアドレス、TVが発行した接続キーはiPhone内にのみ保存され、アプリのウィジェットと共有されます。設定で「別のTVに接続」を選ぶか、アプリを削除すると消去されます。
+
+ローカルネットワークは、同じWi-Fi上のTVを検出して操作するためだけに使用します。操作はiPhone（Apple Watchの場合はiPhone経由）からTVへ直接送られ、インターネットには送信されません。
+
+お問い合わせ: https://github.com/pjyy2k/LG-TV-remote-controller/issues

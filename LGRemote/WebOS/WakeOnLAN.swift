@@ -6,8 +6,8 @@ enum WakeOnLANError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .invalidMAC: return "MAC 주소 형식이 올바르지 않습니다. 예: A1:B2:C3:D4:E5:F6"
-        case .socket(let reason): return "켜기 신호 전송 실패: \(reason)"
+        case .invalidMAC: return String(localized: "MAC 주소 형식이 올바르지 않습니다. 예: A1:B2:C3:D4:E5:F6")
+        case .socket(let reason): return String(localized: "켜기 신호 전송 실패: \(reason)")
         }
     }
 }

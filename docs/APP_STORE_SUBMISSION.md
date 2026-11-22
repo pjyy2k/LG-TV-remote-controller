@@ -4,7 +4,8 @@
 
 ## 앱 이름과 상표
 
-- 앱 이름(App Store): `TV 리모컨 - LG webOS TV용`
+- 앱 이름(App Store): `심플 TV 리모컨 for LG webOS` (언어별 이름은 아래 표)
+  - "광고 없음"은 이름이 아니라 부제에 넣습니다. Apple은 앱 이름에 가격·광고 같은 설명어를 넣는 것을 금지합니다(가이드라인 2.3.7).
   - "LG"로 시작하는 이름은 LG전자 허가 없이 쓰면 거절될 수 있어, 호환 대상을 설명하는 형태로만 씁니다.
 - 기기 홈 화면 이름(`CFBundleDisplayName`)은 앱·위젯·워치 모두 `TV 리모컨`입니다.
 - 설명 마지막 줄에 다음 문구를 넣으세요. 앱 설정 화면 하단에도 같은 문구가 있습니다.
@@ -29,6 +30,26 @@
 ## 수출 규정(암호화)
 
 앱·위젯·워치의 Info.plist에 `ITSAppUsesNonExemptEncryption = NO`가 들어 있어 업로드 후 별도 질문 없이 심사로 넘어갑니다. 표준 TLS(wss)만 사용하므로 면제 대상입니다.
+
+## 출시 국가와 언어
+
+앱은 한국어(기본), 영어, 일본어를 지원합니다. 기기 언어가 이 세 가지가 아니면 한국어로 표시됩니다.
+
+- **가격 및 사용 가능 여부 > 국가 또는 지역**에서 대한민국, 미국, 일본을 고릅니다.
+- **중국 본토는 반드시 해제합니다.** MIIT 앱 등록(ICP 번호) 없이는 출시할 수 없고, 등록은 중국 법인이나 현지 대행사를 통해서만 가능합니다.
+- App Store Connect의 기본 언어를 한국어로 두고, **영어(미국)**과 **일본어** 현지화를 추가해 아래 내용을 넣습니다. 스크린샷은 각 언어로 설정한 기기나 시뮬레이터에서 찍습니다.
+
+| 항목 | 한국어 | English (U.S.) | 日本語 |
+|---|---|---|---|
+| 앱 이름 | 심플 TV 리모컨 for LG webOS | Simple TV Remote for LG webOS | シンプルTVリモコン for LG webOS |
+| 부제 | 광고 없이 누르면 바로 되는 리모컨 | No ads. Just a clean remote. | 広告なし、すぐ使えるリモコン |
+| 키워드 | 리모컨,티비,webOS,스마트TV,위젯,워치 | remote,tv,webos,smart tv,widget,watch,control | リモコン,テレビ,webOS,スマートTV,ウィジェット,ウォッチ |
+| 처리방침 URL | 아래 URL(한·영·일 모두 포함) | 같음 | 같음 |
+
+설명 끝에는 언어별로 다음 문구를 넣습니다.
+
+- English: This is an independent app and is not affiliated with LG Electronics. LG and webOS are trademarks of LG Electronics. The Apple Watch app requires the iPhone app; your iPhone must be nearby and on the same Wi-Fi as the TV.
+- 日本語: このアプリはLGエレクトロニクスとは関係のない独立したアプリです。LGおよびwebOSはLGエレクトロニクスの商標です。Apple WatchアプリにはiPhoneアプリが必要です。iPhoneが近くにあり、TVと同じWi-Fiに接続されている必要があります。
 
 ## Apple Watch
 

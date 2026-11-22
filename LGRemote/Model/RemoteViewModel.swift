@@ -69,6 +69,8 @@ final class RemoteViewModel {
         scanResults = await TVScanner.scan()
         isScanning = false
     }
+        }
+    }
 
     func connect(host: String) async {
         let host = host.trimmingCharacters(in: .whitespaces)
@@ -76,7 +78,7 @@ final class RemoteViewModel {
         state = .connecting
         let previous = savedTV?.host == host ? savedTV : nil
         guard await TVScanner.isReachable(host) else {
-            state = previous == nil ? .failed("TV가 응답하지 않습니다. IP 주소와 Wi-Fi를 확인하세요.") : .poweredOff
+            state = previous == nil ? .failed(String(localized: "TV가 응답하지 않습니다. IP 주소와 Wi-Fi를 확인하세요.")) : .poweredOff
             return
         }
         do {
@@ -299,7 +301,7 @@ final class RemoteViewModel {
                 }
                 do { try await Task.sleep(for: .seconds(1)) } catch { return }
             }
-            state = .failed("TV가 켜지지 않았습니다. TV의 '모바일로 TV 켜기' 설정을 확인하세요.")
+            state = .failed(String(localized: "TV가 켜지지 않았습니다. TV의 '모바일로 TV 켜기' 설정을 확인하세요."))
         }
     }
 

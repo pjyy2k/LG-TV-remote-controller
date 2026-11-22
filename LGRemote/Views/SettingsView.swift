@@ -13,8 +13,8 @@ struct SettingsView: View {
                     LabeledContent("IP 주소", value: model.savedTV?.host ?? "-")
                 }
                 Section {
-                    LabeledContent("유선", value: model.savedTV?.wiredMAC ?? "확인 안 됨")
-                    LabeledContent("무선(Wi-Fi)", value: model.savedTV?.wifiMAC ?? "확인 안 됨")
+                    LabeledContent("유선", value: model.savedTV?.wiredMAC ?? String(localized: "확인 안 됨"))
+                    LabeledContent("무선(Wi-Fi)", value: model.savedTV?.wifiMAC ?? String(localized: "확인 안 됨"))
                     TextField("직접 추가 (예: A1:B2:C3:D4:E5:F6)", text: $mac)
                         .plainTextInput()
                         .onChange(of: mac) { _, value in
@@ -57,7 +57,7 @@ private struct PrivacyPolicyView: View {
                   markdown: text,
                   options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)
               ) else {
-            return AttributedString("개인정보 처리방침을 불러오지 못했습니다.")
+            return AttributedString(localized: "개인정보 처리방침을 불러오지 못했습니다.")
         }
         return parsed
     }()

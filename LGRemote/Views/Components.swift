@@ -51,7 +51,7 @@ extension View {
 
 struct KeyButton: View {
     let systemImage: String
-    var label: String?
+    var label: LocalizedStringKey?
     var shape: KeyStyle.KeyShape = .circle
     var size: CGFloat = 60
     let action: () -> Void
@@ -68,7 +68,7 @@ struct KeyButton: View {
             }
         }
         .buttonStyle(KeyStyle(shape: shape, size: size))
-        .accessibilityLabel(label ?? systemImage)
+        .accessibilityLabel(label.map { Text($0) } ?? Text(systemImage))
     }
 }
 

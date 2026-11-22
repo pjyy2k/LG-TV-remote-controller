@@ -10,12 +10,12 @@ enum WebOSError: LocalizedError, Equatable {
 
     var errorDescription: String? {
         switch self {
-        case .notConnected: return "TV에 연결되어 있지 않습니다."
-        case .timeout: return "TV가 응답하지 않습니다. IP 주소와 Wi-Fi를 확인하세요."
-        case .invalidResponse: return "TV 응답을 해석할 수 없습니다."
-        case .pairingRejected: return "TV에서 연결을 거부했습니다."
-        case .missingManifest: return "등록 매니페스트(RegistrationPayload.json)가 앱에 없습니다."
-        case .tv(let text): return "TV 오류: \(text)"
+        case .notConnected: return String(localized: "TV에 연결되어 있지 않습니다.")
+        case .timeout: return String(localized: "TV가 응답하지 않습니다. IP 주소와 Wi-Fi를 확인하세요.")
+        case .invalidResponse: return String(localized: "TV 응답을 해석할 수 없습니다.")
+        case .pairingRejected: return String(localized: "TV에서 연결을 거부했습니다.")
+        case .missingManifest: return String(localized: "등록 매니페스트(RegistrationPayload.json)가 앱에 없습니다.")
+        case .tv(let text): return String(localized: "TV 오류: \(text)")
         }
     }
 }
@@ -253,7 +253,7 @@ final class WebOSClient {
         }
 
         if type == "error" || payload["returnValue"] as? Bool == false {
-            finish(id, with: .failure(WebOSError.tv(errorText ?? "알 수 없는 오류")))
+            finish(id, with: .failure(WebOSError.tv(errorText ?? String(localized: "알 수 없는 오류"))))
         } else {
             finish(id, with: .success(payload))
         }

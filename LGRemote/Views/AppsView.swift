@@ -29,7 +29,7 @@ struct AppsView: View {
                         }
                     }
                     if model.apps.isEmpty {
-                        Text(model.isConnected ? "앱 목록을 불러오는 중…" : "TV에 연결되면 앱 목록이 표시됩니다.")
+                        Text(model.isConnected ? LocalizedStringKey("앱 목록을 불러오는 중…") : LocalizedStringKey("TV에 연결되면 앱 목록이 표시됩니다."))
                             .foregroundStyle(.secondary)
                     }
                 }

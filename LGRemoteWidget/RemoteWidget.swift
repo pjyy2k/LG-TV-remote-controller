@@ -53,7 +53,7 @@ struct RemoteWidgetView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(entry.tvName ?? "앱에서 TV를 연결하세요")
+            Text(entry.tvName ?? String(localized: "앱에서 TV를 연결하세요"))
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.white.opacity(0.85))
                 .lineLimit(1)

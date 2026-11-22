@@ -24,7 +24,7 @@ final class WatchRelay: NSObject, WCSessionDelegate {
         let command = (message["command"] as? String).flatMap(TVCommand.init(rawValue:))
         Task { @MainActor in
             guard let command else {
-                replyHandler(["error": "알 수 없는 명령입니다. 아이폰 앱을 업데이트하세요."])
+                replyHandler(["error": String(localized: "알 수 없는 명령입니다. 아이폰 앱을 업데이트하세요.")])
                 return
             }
             self.enqueue(command, reply: replyHandler)

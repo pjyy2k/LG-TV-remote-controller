@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00C6BE4A47E308CA4CABD71D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DD005050FE2C4B9BE7879F4D /* PrivacyInfo.xcprivacy */; };
+		027F82C392C6B55C11910247 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0C13FFD73E1DD3AC48DBCD7D /* InfoPlist.xcstrings */; };
 		03CF410FB56843DD985EF57E /* TVPowerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD120403FD136C7FCF028205 /* TVPowerState.swift */; };
 		07863189441DF1BE70010EC5 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E80960EC24C46738D6E0729 /* ConnectView.swift */; };
 		0C186D346EFBCF16F5D98CD3 /* LGRemoteWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3197EC970766903D8B7D41 /* LGRemoteWatchApp.swift */; };
@@ -19,16 +20,19 @@
 		2F8951AEADC796C31F1F2C61 /* WatchRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7276A1366EC0F1E416F74D8D /* WatchRelay.swift */; };
 		31F5AE008731B3449C8B4766 /* RegistrationPayload.json in Resources */ = {isa = PBXBuildFile; fileRef = 438E636BA04497DEC5F926CB /* RegistrationPayload.json */; };
 		3EE252C3DF9E3C76A2F7B879 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D422BB3E02F9C461758CC052 /* SettingsView.swift */; };
+		40A6835A73D1BB3D4285C3B1 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0C13FFD73E1DD3AC48DBCD7D /* InfoPlist.xcstrings */; };
 		47468623DD7A4060DC14E34E /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E00CAD9CD58AF0B9C6F02 /* TVCommand.swift */; };
 		5594CA99A29611531FE94E43 /* LGRemoteWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D2A2F83BB76EC13A9F216D56 /* LGRemoteWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5E25B8DC1D991524F715D07A /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A382D12B8DFE74C3B59D8C4B /* LocalNetwork.swift */; };
 		601ED9E2EEEFAC90A8021E82 /* TVCommandIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */; };
+		662B45A9D4A56B8906D60BC1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DF682B452989146BBACF8DA4 /* Localizable.xcstrings */; };
 		748EB4D92D221525806BA866 /* TVScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97F8647CF6810EC01F1FA35 /* TVScanner.swift */; };
 		75D124FDE3B7F8F2A0FBB918 /* TVStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4698A4BEEADF3883351B85 /* TVStore.swift */; };
 		7F45475AA616979928934AAF /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEC39B977048458E8991E8 /* AppsView.swift */; };
 		7F8F24286477D64869670C50 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DD005050FE2C4B9BE7879F4D /* PrivacyInfo.xcprivacy */; };
 		8ACF23B0A47B4F5E1E1D0C14 /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BEDC8F29032BDDA487BF4D /* RemoteView.swift */; };
 		8E8E60370BEB43369EA9A003 /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E00CAD9CD58AF0B9C6F02 /* TVCommand.swift */; };
+		8F22055F16185B6DAB680319 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DF682B452989146BBACF8DA4 /* Localizable.xcstrings */; };
 		925DE37664B9AB3E23EB139C /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C0A4E78DD1B20FC5ECCBC /* Components.swift */; };
 		954E8FC5B02818258F23F7F8 /* RemoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5B8A300A475048A704F97 /* RemoteWidget.swift */; };
 		AA93428A6D6E38532BE9578D /* LGRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC3B0324EF9153C3B2A61CB /* LGRemoteApp.swift */; };
@@ -37,6 +41,8 @@
 		B1166256951B307B7F97216B /* TVCommandIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */; };
 		B6968DB5B79C75F7619432AB /* privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = 85A02F8677A5B4DD8DE27DE7 /* privacy.md */; };
 		BE86F1ADAFD90CB16095078D /* RemoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8363DA739050168E8668B344 /* RemoteViewModel.swift */; };
+		BEE534D231FD781BCCA15024 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DF682B452989146BBACF8DA4 /* Localizable.xcstrings */; };
+		C9F039226D1346DD97713B53 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0C13FFD73E1DD3AC48DBCD7D /* InfoPlist.xcstrings */; };
 		CCAED1D6F4891A7F0838AA51 /* TVPowerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD120403FD136C7FCF028205 /* TVPowerState.swift */; };
 		CFAB8D24D37B4B2BCB89AA90 /* WakeOnLAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA366C48585BEDC8557C713 /* WakeOnLAN.swift */; };
 		D84C564B3879E0F5EACE8ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D5BE744A35AFF18D2D32B1 /* Assets.xcassets */; };
@@ -91,6 +97,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C13FFD73E1DD3AC48DBCD7D /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		23D729FBA5D1E1D76E1BC997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2F7BE9D61329CE193577BB8F /* TouchpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchpadView.swift; sourceTree = "<group>"; };
 		3CA366C48585BEDC8557C713 /* WakeOnLAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeOnLAN.swift; sourceTree = "<group>"; };
@@ -118,12 +125,13 @@
 		D2A2F83BB76EC13A9F216D56 /* LGRemoteWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGRemoteWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D422BB3E02F9C461758CC052 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D97F8647CF6810EC01F1FA35 /* TVScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVScanner.swift; sourceTree = "<group>"; };
-		DB82B456F351AF7CB0C582F0 /* LGRemote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LGRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB82B456F351AF7CB0C582F0 /* LGRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC05C787ACD1833078936ACF /* LGRemoteWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LGRemoteWidget.entitlements; sourceTree = "<group>"; };
 		DCCEC39B977048458E8991E8 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
-		DD005050FE2C4B9BE7879F4D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DD005050FE2C4B9BE7879F4D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DDC3B0324EF9153C3B2A61CB /* LGRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGRemoteApp.swift; sourceTree = "<group>"; };
-		F36F26E573614CDEE0E34F60 /* LGRemoteWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LGRemoteWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF682B452989146BBACF8DA4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F36F26E573614CDEE0E34F60 /* LGRemoteWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LGRemoteWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD51E2A26038FE46B9AA8D58 /* WatchRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRemote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +247,8 @@
 		D6361EB037D9E4C63FAB6D88 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0C13FFD73E1DD3AC48DBCD7D /* InfoPlist.xcstrings */,
+				DF682B452989146BBACF8DA4 /* Localizable.xcstrings */,
 				420E00CAD9CD58AF0B9C6F02 /* TVCommand.swift */,
 				C4E41FA4AA78E0F32018FB61 /* TVCommandIntent.swift */,
 				7A4698A4BEEADF3883351B85 /* TVStore.swift */,
@@ -338,11 +348,13 @@
 				};
 			};
 			buildConfigurationList = 16525020E0984C01E24EF898 /* Build configuration list for PBXProject "LGRemote" */;
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
+				ja,
+				ko,
 			);
 			mainGroup = 1ECF8E90A0986C8E4ED60901;
 			minimizedProjectReferenceProxies = 1;
@@ -364,6 +376,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2A09ED6C65428A819C448D /* Assets.xcassets in Resources */,
+				C9F039226D1346DD97713B53 /* InfoPlist.xcstrings in Resources */,
+				8F22055F16185B6DAB680319 /* Localizable.xcstrings in Resources */,
 				7F8F24286477D64869670C50 /* PrivacyInfo.xcprivacy in Resources */,
 				31F5AE008731B3449C8B4766 /* RegistrationPayload.json in Resources */,
 				B6968DB5B79C75F7619432AB /* privacy.md in Resources */,
@@ -375,6 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84C564B3879E0F5EACE8ACE /* Assets.xcassets in Resources */,
+				40A6835A73D1BB3D4285C3B1 /* InfoPlist.xcstrings in Resources */,
+				BEE534D231FD781BCCA15024 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +398,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027F82C392C6B55C11910247 /* InfoPlist.xcstrings in Resources */,
+				662B45A9D4A56B8906D60BC1 /* Localizable.xcstrings in Resources */,
 				00C6BE4A47E308CA4CABD71D /* PrivacyInfo.xcprivacy in Resources */,
 				16732CBF980254907A7AA56A /* RegistrationPayload.json in Resources */,
 			);
@@ -463,6 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LGRemote/LGRemote.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = B234V8DM72;
 				INFOPLIST_FILE = LGRemote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,12 +547,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -545,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B234V8DM72;
 				INFOPLIST_FILE = LGRemoteWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinyoung.lgremote.watchkitapp;
 				SDKROOT = watchos;
@@ -559,6 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LGRemote/LGRemote.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = B234V8DM72;
 				INFOPLIST_FILE = LGRemote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = LGRemoteWidget/LGRemoteWidget.entitlements;
+				DEVELOPMENT_TEAM = B234V8DM72;
 				INFOPLIST_FILE = LGRemoteWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -591,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B234V8DM72;
 				INFOPLIST_FILE = LGRemoteWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinyoung.lgremote.watchkitapp;
 				SDKROOT = watchos;
@@ -647,11 +672,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -663,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = LGRemoteWidget/LGRemoteWidget.entitlements;
+				DEVELOPMENT_TEAM = B234V8DM72;
 				INFOPLIST_FILE = LGRemoteWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

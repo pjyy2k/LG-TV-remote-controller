@@ -7,8 +7,8 @@ enum TVCommandError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .noSavedTV: return "앱에서 먼저 TV를 연결하세요."
-        case .missingMAC: return "TV를 켜려면 TV가 켜져 있을 때 앱으로 한 번 연결하거나, 설정에서 MAC 주소를 입력하세요."
+        case .noSavedTV: return String(localized: "앱에서 먼저 TV를 연결하세요.")
+        case .missingMAC: return String(localized: "TV를 켜려면 TV가 켜져 있을 때 앱으로 한 번 연결하거나, 설정에서 MAC 주소를 입력하세요.")
         }
     }
 }

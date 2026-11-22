@@ -16,7 +16,7 @@ final class WatchRemote: NSObject, WCSessionDelegate {
     func send(_ command: TVCommand) {
         let session = WCSession.default
         guard session.activationState == .activated, session.isReachable else {
-            finish(error: "아이폰에 연결할 수 없습니다. 아이폰이 가까이 있는지 확인하세요.")
+            finish(error: String(localized: "아이폰에 연결할 수 없습니다. 아이폰이 가까이 있는지 확인하세요."))
             return
         }
         WKInterfaceDevice.current().play(.click)

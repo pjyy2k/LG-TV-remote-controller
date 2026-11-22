@@ -45,7 +45,7 @@ struct RemoteView: View {
 
             VStack(alignment: .leading) {
                 Text(model.savedTV?.name ?? "LG TV").font(.headline)
-                Text(model.isConnected ? "연결됨" : model.state == .poweredOff ? "TV 꺼짐" : "연결 안 됨")
+                Text(statusText)
                     .font(.caption)
                     .foregroundStyle(model.isConnected ? .green : .secondary)
             }
@@ -91,8 +91,13 @@ struct RemoteView: View {
     }
 
     private var volumeLabel: String {
-        if model.usesExternalSpeaker { return "외부 스피커" }
-        return model.volume.map { "음량 \($0)" } ?? "음량"
+        if model.usesExternalSpeaker { return String(localized: "외부 스피커") }
+        return model.volume.map { String(localized: "음량 \($0)") } ?? String(localized: "음량")
+    }
+
+    private var statusText: LocalizedStringKey {
+        if model.isConnected { return "연결됨" }
+        return model.state == .poweredOff ? "TV 꺼짐" : "연결 안 됨"
     }
 
     private var mediaRow: some View {

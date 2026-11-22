@@ -104,7 +104,7 @@ struct ConnectionBanner: View {
 
     private var failureText: String {
         if case .failed(let reason) = model.state { return reason }
-        return "연결되지 않음"
+        return String(localized: "연결되지 않음")
     }
 
     private func banner<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
