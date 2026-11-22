@@ -49,6 +49,7 @@ final class RemoteViewModel {
     private var isPoweringOn = false
     private var watchTask: Task<Void, Never>?
     private var lastProbeReachable: Bool?
+    private var unreachableSince: Date?
 
     init() {
         savedTV = TVStore.load()
@@ -111,12 +112,20 @@ final class RemoteViewModel {
     func startWatching() {
         watchTask?.cancel()
         lastProbeReachable = nil
+        unreachableSince = nil
         watchTask = Task {
             while !Task.isCancelled {
                 await watchTick()
-                do { try await Task.sleep(for: .seconds(1)) } catch { return }
+                do { try await Task.sleep(for: watchInterval) } catch { return }
             }
         }
+    }
+
+    // Probe every second right after the TV drops off (a quick off-and-on), then ease off
+    // so a TV left off doesn't keep the Wi-Fi radio busy.
+    private var watchInterval: Duration {
+        guard let unreachableSince, Date().timeIntervalSince(unreachableSince) > 60 else { return .seconds(1) }
+        return .seconds(3)
     }
 
     func stopWatching() {
@@ -131,9 +140,11 @@ final class RemoteViewModel {
         let wasReachable = lastProbeReachable
         lastProbeReachable = reachable
         guard reachable else {
+            if unreachableSince == nil { unreachableSince = Date() }
             if state != .poweredOff { state = .poweredOff }
             return
         }
+        unreachableSince = nil
         if state == .poweredOff && wasReachable == true { return }
         await connect(host: tv.host)
     }
