@@ -12,8 +12,8 @@
 
 ## 개인정보 처리방침
 
-- URL: https://github.hellojyp.com/LG-TV-remote-controller/privacy.html — **앱 정보 > 개인정보 처리방침 URL**에 넣으세요.
-- 지원 URL: https://github.hellojyp.com/LG-TV-remote-controller/
+- URL: https://pjyy2k.github.io/LG-TV-remote-controller/privacy.html — **앱 정보 > 개인정보 처리방침 URL**에 넣으세요.
+- 지원 URL: https://pjyy2k.github.io/LG-TV-remote-controller/
 - 원문은 `docs/privacy.md` 하나입니다. GitHub Pages가 이 파일을 페이지로 만들고, 앱 설정 > 개인정보 처리방침도 빌드에 포함된 같은 파일을 보여 줍니다. 내용을 바꾸고 푸시하면 웹 페이지가 갱신되고, 앱은 다음 빌드부터 반영됩니다.
 
 ## 앱 개인정보 보호(개인정보 라벨)
