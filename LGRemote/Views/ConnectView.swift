@@ -8,6 +8,8 @@ struct ConnectView: View {
         NavigationStack {
             List {
                 Section {
+                    Label("처음 연결할 때는 TV가 켜져 있어야 합니다.", systemImage: "power")
+                        .font(.subheadline.weight(.semibold))
                     Text("아이폰과 TV가 같은 Wi-Fi에 연결되어 있어야 합니다. 처음 연결하면 TV 화면에 연결 허용 창이 뜹니다.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
@@ -24,7 +26,16 @@ struct ConnectView: View {
                         Button {
                             Task { await model.connect(host: host) }
                         } label: {
-                            Label(host, systemImage: "tv")
+                            Label {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(model.tvNames[host] ?? host)
+                                    if model.tvNames[host] != nil {
+                                        Text(host).font(.caption).foregroundStyle(.secondary)
+                                    }
+                                }
+                            } icon: {
+                                Image(systemName: "tv")
+                            }
                         }
                     }
                 } header: {

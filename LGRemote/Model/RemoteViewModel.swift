@@ -40,6 +40,7 @@ final class RemoteViewModel {
     private(set) var apps: [TVApp] = []
     private(set) var inputs: [TVInput] = []
     private(set) var scanResults: [String] = []
+    private(set) var tvNames: [String: String] = [:]
     private(set) var isScanning = false
     var errorMessage: String?
 
@@ -68,7 +69,13 @@ final class RemoteViewModel {
         isScanning = true
         scanResults = await TVScanner.scan()
         isScanning = false
-    }
+        await withTaskGroup(of: (String, String?).self) { group in
+            for host in scanResults where tvNames[host] == nil {
+                group.addTask { (host, await TVScanner.name(of: host)) }
+            }
+            for await (host, name) in group {
+                if let name { tvNames[host] = name }
+            }
         }
     }
 
@@ -83,7 +90,7 @@ final class RemoteViewModel {
         }
         do {
             let key = try await client.connect(host: host, clientKey: previous?.clientKey)
-            var tv = previous ?? SavedTV(host: host, name: "LG TV")
+            var tv = previous ?? SavedTV(host: host, name: tvNames[host] ?? "LG TV")
             tv.clientKey = key
             save(tv)
             state = .connected
